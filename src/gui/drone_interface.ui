@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DroneInterface</class>
+ <widget class="QWidget" name="DroneInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MiniDrone Remote Controller</string>
+  </property>
+  <layout class="QVBoxLayout" name="main_layout">
+   <item>
+    <widget class="QLabel" name="video_label">
+     <property name="text">
+      <string>No Video Feed</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="control_buttons_layout">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn_up">
+       <property name="text">
+        <string>Up (W)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btn_turn_left">
+       <property name="text">
+        <string>Turn Left (A)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btn_turn_right">
+       <property name="text">
+        <string>Turn Right (D)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btn_down">
+       <property name="text">
+        <string>Down (S)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="btn_forward">
+       <property name="text">
+        <string>Forward (I)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="btn_strafe_left">
+       <property name="text">
+        <string>Left (J)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QPushButton" name="btn_strafe_right">
+       <property name="text">
+        <string>Right (L)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="btn_backward">
+       <property name="text">
+        <string>Backward (K)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="action_buttons_layout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btn_land">
+       <property name="text">
+        <string>Landing (Esc)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn_takeoff">
+       <property name="text">
+        <string>Take Off (Backspace)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_connection_settings">
+     <property name="title">
+      <string>Connection Settings</string>
+     </property>
+     <layout class="QGridLayout" name="connection_settings_layout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_drone_ip">
+        <property name="text">
+         <string>Drone IP:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="le_drone_ip"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_drone_port">
+        <property name="text">
+         <string>Drone Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="le_drone_port"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_video_url">
+        <property name="text">
+         <string>Video URL:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="le_video_url"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="btn_apply_settings">
+        <property name="text">
+         <string>Apply Settings</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
